@@ -20,4 +20,12 @@ public class BeerServiceImpl implements BeerService {
                 .build();
     }
 
+    @Override
+    public BeetDto saveNewBeer(BeetDto beetDto) {
+        return BeetDto.builder()
+                .id(UUID.randomUUID())
+                .beerName("Henikein")
+                .beerStyle("German")
+                .build();
+    }
 }
